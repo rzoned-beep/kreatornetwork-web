@@ -3,54 +3,44 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  title="KreatorNetwork — Ekosistem & Komunitas Content Creator Terbesar di Indonesia"
-  description="Komunitas eksklusif konten kreator aktif di Instagram, TikTok, YouTube, dan Forum. Dapatkan akses network tertutup, AI tools, dan resource gratis."
+  title="KreatorNetwork — Jaringan & Komunitas Content Creator Terbesar di Indonesia"
+  description="Kumpulan kreator konten aktif di Instagram, TikTok, YouTube, dan Forum. Akses circle diskusi eksklusif, tools AI, dan kolaborasi nyata."
 >
-  <!-- Background Glow Accents -->
-  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-indigo-600/15 rounded-full blur-[140px]"></div>
-    <div class="absolute top-[45%] -left-32 w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[130px]"></div>
-    <div class="absolute top-[75%] -right-32 w-[550px] h-[550px] bg-purple-600/15 rounded-full blur-[140px]"></div>
-  </div>
+  <!-- Background Grid Texture (Subtle & Editorial) -->
+  <div class="fixed inset-0 pointer-events-none z-0 bg-grid-pattern opacity-40"></div>
 
   <div class="relative z-10 flex flex-col min-h-screen">
-    <!-- Navigation Bar -->
-    <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-[#090d16]/80 backdrop-blur-xl">
+    <!-- Top Bar / Navbar -->
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0b0c0e]/90 backdrop-blur-md">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 via-indigo-600 to-purple-600 p-[1px] shadow-lg shadow-indigo-500/20 group-hover:shadow-indigo-500/40 transition">
-            <div class="w-full h-full bg-[#090d16] rounded-xl flex items-center justify-center">
-              <svg class="w-5 h-5 text-indigo-400 group-hover:scale-110 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3.5 group">
+          <div class="w-10 h-10 rounded-lg bg-zinc-900 border border-white/15 flex items-center justify-center text-white font-black text-sm tracking-widest group-hover:border-white/40 transition">
+            KN
           </div>
           <div class="flex flex-col">
-            <span class="font-extrabold text-xl tracking-tight text-white flex items-center gap-1.5">
-              Kreator<span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400">Network</span>
+            <span class="font-extrabold text-lg tracking-tight text-white flex items-center gap-2">
+              KreatorNetwork<span class="text-xs font-semibold px-2 py-0.5 rounded bg-zinc-800 text-zinc-300 border border-white/10">ID</span>
             </span>
-            <span class="text-[10px] uppercase tracking-wider font-semibold text-slate-400 -mt-1">Creator Ecosystem</span>
+            <span class="text-[10px] uppercase tracking-wider text-zinc-400 font-medium">Independent Creator Collective</span>
           </div>
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-wider font-semibold text-zinc-400">
+          <a href="#kreator" class="hover:text-white transition">Kreator Kami</a>
           <a href="#stats" class="hover:text-white transition">Statistik</a>
-          <a href="#benefits" class="hover:text-white transition">Benefit Komunitas</a>
-          <a href="#platforms" class="hover:text-white transition">Platform</a>
+          <a href="#benefits" class="hover:text-white transition">Benefit</a>
           <a href="#faq" class="hover:text-white transition">FAQ</a>
         </nav>
 
-        <!-- CTA Button -->
+        <!-- CTA Action -->
         <div class="flex items-center gap-3">
           <a
             href="#register"
-            class="relative inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white transition-all bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 rounded-xl shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] border border-indigo-400/30"
+            class="inline-flex items-center justify-center px-5 py-2.5 text-xs uppercase tracking-wider font-bold text-black bg-white hover:bg-zinc-200 rounded-lg transition active:scale-[0.98]"
           >
-            <span>Gabung Komunitas</span>
-            <svg class="w-4 h-4 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
+            Gabung Komunitas
           </a>
         </div>
       </div>
@@ -58,199 +48,385 @@ import Layout from '../layouts/Layout.astro';
 
     <main class="flex-grow">
       <!-- HERO SECTION -->
-      <section class="relative pt-16 pb-24 md:pt-28 md:pb-36 overflow-hidden">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <!-- Live Indicator Badge -->
-          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-xs font-semibold text-indigo-300 mb-8 backdrop-blur-md">
-            <span class="relative flex h-2.5 w-2.5">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-            </span>
-            <span>Batch Pendaftaran Kreator Gelombang 2026 Resmi Dibuka</span>
+      <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            
+            <!-- Left Column: Copywriting & Social Proof -->
+            <div class="lg:col-span-7 flex flex-col items-start text-left">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-white/10 text-xs font-mono text-zinc-300 mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>OPEN REGISTRATION • BATCH 2026</span>
+              </div>
+
+              <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.08] mb-6">
+                Jaringan Kreator Konten Aktif Terbesar di Indonesia.
+              </h1>
+
+              <p class="text-base sm:text-lg text-zinc-300 font-normal leading-relaxed max-w-xl mb-8">
+                Bukan kursus dan bukan kelas teori. Ini adalah ekosistem para kreator dan digital storytellers yang setiap hari memproduksi konten di <span class="text-white font-semibold">Instagram</span>, <span class="text-white font-semibold">TikTok</span>, <span class="text-white font-semibold">YouTube</span>, hingga <span class="text-white font-semibold">Forum Komunitas</span>.
+              </p>
+
+              <!-- Social Proof: Real Nano Banana Creator Stack -->
+              <div class="flex items-center gap-4 p-3 rounded-xl bg-zinc-900/80 border border-white/10 mb-8 w-full sm:w-auto">
+                <div class="flex -space-x-3 overflow-hidden">
+                  <img class="inline-block h-10 w-10 rounded-full ring-2 ring-[#0b0c0e] object-cover" src="/creators/avatar-indah.jpg" alt="Indah Permatasari" />
+                  <img class="inline-block h-10 w-10 rounded-full ring-2 ring-[#0b0c0e] object-cover" src="/creators/avatar-aditya.jpg" alt="Aditya Permana" />
+                  <img class="inline-block h-10 w-10 rounded-full ring-2 ring-[#0b0c0e] object-cover" src="/creators/avatar-clara.jpg" alt="Clara Stephanie" />
+                  <img class="inline-block h-10 w-10 rounded-full ring-2 ring-[#0b0c0e] object-cover" src="/creators/avatar-kevin.jpg" alt="Kevin Tanuwidjaja" />
+                  <img class="inline-block h-10 w-10 rounded-full ring-2 ring-[#0b0c0e] object-cover" src="/creators/avatar-budi.jpg" alt="Budi Santoso" />
+                </div>
+                <div class="flex flex-col text-xs">
+                  <span class="font-bold text-white tracking-wide">350+ Content Creator</span>
+                  <span class="text-zinc-400">Aktif posting & saling berkolaborasi</span>
+                </div>
+              </div>
+
+              <!-- Action CTAs -->
+              <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+                <a
+                  href="#register"
+                  class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 text-sm font-bold text-black bg-white hover:bg-zinc-200 rounded-lg transition active:scale-[0.98]"
+                >
+                  Daftar Menjadi Member — Gratis
+                </a>
+                <a
+                  href="#kreator"
+                  class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-zinc-300 hover:text-white bg-zinc-900 hover:bg-zinc-800 rounded-lg border border-white/10 transition"
+                >
+                  Lihat Profil Kreator ↓
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column: Authentic Editorial Visual Card -->
+            <div class="lg:col-span-5 relative">
+              <div class="editorial-card rounded-2xl overflow-hidden p-3 relative group">
+                <!-- Main Featured Photo (Nano Banana Photo) -->
+                <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-zinc-950">
+                  <img
+                    src="/creators/action-indah.jpg"
+                    alt="Kreator Aktif Sedang Produksi Konten"
+                    class="w-full h-full object-cover object-center group-hover:scale-[1.02] transition duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                  <!-- Overlay Meta Badge -->
+                  <div class="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-black/70 backdrop-blur-md border border-white/15 text-[11px] font-mono text-white">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    <span>STUDIO SESSION</span>
+                  </div>
+
+                  <!-- Bottom Caption -->
+                  <div class="absolute bottom-4 left-4 right-4 text-left">
+                    <span class="text-[11px] uppercase tracking-wider font-mono text-zinc-400">Featured Creator</span>
+                    <h3 class="text-xl font-bold text-white mt-0.5">Indah Permatasari</h3>
+                    <p class="text-xs text-zinc-300 mt-1">Lifestyle & Aesthetic Reels • 185k Followers di TikTok & Instagram</p>
+                    <div class="mt-3 flex items-center gap-2">
+                      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/10 text-zinc-200 border border-white/10">1.8M Monthly Views</span>
+                      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/10 text-zinc-200 border border-white/10">Cross-Poster</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Floating Mini Side Card -->
+                <div class="absolute -bottom-5 -left-5 bg-[#14171c] border border-white/15 rounded-xl p-3 shadow-2xl flex items-center gap-3 max-w-[260px] hidden sm:flex">
+                  <img
+                    src="/creators/avatar-aditya.jpg"
+                    alt="Aditya Permana"
+                    class="w-11 h-11 rounded-lg object-cover ring-1 ring-white/20"
+                  />
+                  <div class="flex flex-col text-left">
+                    <span class="text-xs font-bold text-white">Aditya Permana</span>
+                    <span class="text-[11px] text-zinc-400">Tech & Gadget Reviewer</span>
+                    <span class="text-[10px] font-mono text-emerald-400 mt-0.5">● Baru saja merilis video</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
+        </div>
+      </section>
 
-          <!-- Main Headline -->
-          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.12] mb-6">
-            Rumah Bagi Ribuan <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-300 to-purple-400">
-              Content Creator Aktif
-            </span>
-          </h1>
-
-          <!-- Subheadline -->
-          <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 font-normal leading-relaxed mb-10">
-            Kumpulan kreator konten, kurator, dan pegiat media digital yang aktif memproduksi karya di 
-            <span class="text-white font-medium">Instagram</span>, 
-            <span class="text-white font-medium">TikTok</span>, 
-            <span class="text-white font-medium">YouTube</span>, hingga 
-            <span class="text-white font-medium">Forum Komunitas</span>.
-          </p>
-
-          <!-- Action Buttons -->
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <a
-              href="#register"
-              class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl shadow-xl shadow-indigo-600/30 hover:shadow-indigo-600/50 hover:scale-[1.02] active:scale-[0.98] transition border border-indigo-400/30"
-            >
-              <span>Daftar Jadi Member — 100% Gratis</span>
-              <svg class="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </a>
-            <a
-              href="#benefits"
-              class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 text-base font-semibold text-slate-300 bg-slate-900/80 hover:bg-slate-800/90 rounded-2xl border border-slate-700/70 hover:text-white transition backdrop-blur-md"
-            >
-              Eksplor Benefit Komunitas
-            </a>
-          </div>
-
-          <!-- Active Platform Badges -->
-          <div class="pt-6 border-t border-slate-800/80">
-            <p class="text-xs uppercase tracking-widest font-semibold text-slate-400 mb-5">
-              Member kami aktif berkarya di berbagai ekosistem platform:
-            </p>
-            <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
-              <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-medium text-slate-200">
-                <span class="w-2 h-2 rounded-full bg-pink-500"></span> Instagram Reels & Feed
-              </span>
-              <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-medium text-slate-200">
-                <span class="w-2 h-2 rounded-full bg-cyan-400"></span> TikTok Video & LIVE
-              </span>
-              <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-medium text-slate-200">
-                <span class="w-2 h-2 rounded-full bg-red-500"></span> YouTube Shorts & VOD
-              </span>
-              <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-medium text-slate-200">
-                <span class="w-2 h-2 rounded-full bg-sky-400"></span> X / Twitter Threads
-              </span>
-              <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-medium text-slate-200">
-                <span class="w-2 h-2 rounded-full bg-amber-500"></span> Kaskus & Forum Komunitas
-              </span>
-              <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-medium text-slate-200">
-                <span class="w-2 h-2 rounded-full bg-orange-500"></span> Reddit & Quora Diskusi
-              </span>
+      <!-- AGGREGATE STATS (EDITORIAL CLEAN NUMBERS) -->
+      <section id="stats" class="py-16 bg-[#0f1115] border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-left border-l-2 border-white/20 pl-5">
+              <span class="text-3xl sm:text-5xl font-black text-white tracking-tight">350+</span>
+              <h4 class="text-sm font-bold text-zinc-200 mt-2">Kreator Aktif</h4>
+              <p class="text-xs text-zinc-400 mt-1">Memproduksi minimal 3 konten per minggu</p>
+            </div>
+            <div class="text-left border-l-2 border-white/20 pl-5">
+              <span class="text-3xl sm:text-5xl font-black text-white tracking-tight">12.5M+</span>
+              <h4 class="text-sm font-bold text-zinc-200 mt-2">Organic Monthly Reach</h4>
+              <p class="text-xs text-zinc-400 mt-1">Total impresi organik tanpa iklan berbayar</p>
+            </div>
+            <div class="text-left border-l-2 border-white/20 pl-5">
+              <span class="text-3xl sm:text-5xl font-black text-white tracking-tight">850K+</span>
+              <h4 class="text-sm font-bold text-zinc-200 mt-2">Interaksi Bulanan</h4>
+              <p class="text-xs text-zinc-400 mt-1">Likes, komentar, save & share berkualitas</p>
+            </div>
+            <div class="text-left border-l-2 border-white/20 pl-5">
+              <span class="text-3xl sm:text-5xl font-black text-white tracking-tight">14+</span>
+              <h4 class="text-sm font-bold text-zinc-200 mt-2">Platform Media</h4>
+              <p class="text-xs text-zinc-400 mt-1">IG, TikTok, YouTube, Threads, Forum & Web</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- STATS COUNTER SECTION -->
-      <section id="stats" class="py-16 bg-slate-950/60 border-y border-slate-800/80 relative">
+      <!-- CREATOR SPOTLIGHT (NANO BANANA PERSONAS IN ACTION) -->
+      <section id="kreator" class="py-24 border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            <!-- Stat 1 -->
-            <div class="glass-panel p-6 sm:p-8 rounded-2xl relative overflow-hidden group">
-              <div class="absolute -right-4 -bottom-4 w-24 h-24 bg-indigo-500/10 rounded-full blur-2xl group-hover:bg-indigo-500/20 transition"></div>
-              <p class="text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400 mb-2">
-                350+
-              </p>
-              <h3 class="text-sm sm:text-base font-bold text-white mb-1">Kreator Tergabung</h3>
-              <p class="text-xs sm:text-sm text-slate-400">Multi-niche dari lifestyle hingga tech</p>
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+            <div>
+              <span class="text-xs font-mono text-zinc-400 uppercase tracking-widest">[ KOMUNITAS KREATIF ]</span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+                Sebagian Member yang Aktif Berkarya
+              </h2>
+            </div>
+            <p class="text-sm text-zinc-400 max-w-md mt-4 md:mt-0">
+              Setiap member memiliki niche yang spesifik dan audiens setia. Kami saling mendukung interaksi dan menjaga kualitas karya.
+            </p>
+          </div>
+
+          <!-- Creator Grid Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Creator 1 -->
+            <div class="editorial-card rounded-xl p-5 text-left flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img src="/creators/avatar-indah.jpg" alt="Indah Permatasari" class="w-14 h-14 rounded-full object-cover border border-white/15" />
+                  <div>
+                    <h3 class="font-bold text-white text-base">Indah Permatasari</h3>
+                    <p class="text-xs text-zinc-400">@indah.story • TikTok & Reels</p>
+                    <span class="inline-block mt-1 text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-800 text-zinc-300">Lifestyle & Travel</span>
+                  </div>
+                </div>
+                <p class="text-xs text-zinc-300 leading-relaxed mb-4">
+                  "Bergabung dengan KreatorNetwork membantu saya paham timing audio viral dan struktur video 3 detik pertama yang menahan retensi penonton."
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-400">
+                <span>Reach: 240K/bln</span>
+                <span class="text-emerald-400">Verified Member</span>
+              </div>
             </div>
 
-            <!-- Stat 2 -->
-            <div class="glass-panel p-6 sm:p-8 rounded-2xl relative overflow-hidden group">
-              <div class="absolute -right-4 -bottom-4 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition"></div>
-              <p class="text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-2">
-                12.5M+
-              </p>
-              <h3 class="text-sm sm:text-base font-bold text-white mb-1">Monthly Organic Reach</h3>
-              <p class="text-xs sm:text-sm text-slate-400">Jangkauan konten kumulatif per bulan</p>
+            <!-- Creator 2 -->
+            <div class="editorial-card rounded-xl p-5 text-left flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img src="/creators/avatar-aditya.jpg" alt="Aditya Permana" class="w-14 h-14 rounded-full object-cover border border-white/15" />
+                  <div>
+                    <h3 class="font-bold text-white text-base">Aditya Permana</h3>
+                    <p class="text-xs text-zinc-400">@adityatech.id • YouTube & Threads</p>
+                    <span class="inline-block mt-1 text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-800 text-zinc-300">Tech & Hardware</span>
+                  </div>
+                </div>
+                <p class="text-xs text-zinc-300 leading-relaxed mb-4">
+                  "Diskusi di grup komunitas sangat objektif. Kami saling membedah script review sebelum shooting, jadi konten selalu tajam dan dipercaya penonton."
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-400">
+                <span>Reach: 480K/bln</span>
+                <span class="text-emerald-400">Verified Member</span>
+              </div>
             </div>
 
-            <!-- Stat 3 -->
-            <div class="glass-panel p-6 sm:p-8 rounded-2xl relative overflow-hidden group">
-              <div class="absolute -right-4 -bottom-4 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition"></div>
-              <p class="text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-sky-400 mb-2">
-                850K+
-              </p>
-              <h3 class="text-sm sm:text-base font-bold text-white mb-1">Interaksi & Engagement</h3>
-              <p class="text-xs sm:text-sm text-slate-400">Likes, shares, comments & reposts</p>
+            <!-- Creator 3 -->
+            <div class="editorial-card rounded-xl p-5 text-left flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img src="/creators/avatar-clara.jpg" alt="Clara Stephanie" class="w-14 h-14 rounded-full object-cover border border-white/15" />
+                  <div>
+                    <h3 class="font-bold text-white text-base">Clara Stephanie</h3>
+                    <p class="text-xs text-zinc-400">@claraculinary • Instagram & TikTok</p>
+                    <span class="inline-block mt-1 text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-800 text-zinc-300">Culinary & Hospitality</span>
+                  </div>
+                </div>
+                <p class="text-xs text-zinc-300 leading-relaxed mb-4">
+                  "Akses template kalender konten dan prompt AI untuk riset angle makanan baru sangat menghemat waktu produksi saya setiap hari."
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-400">
+                <span>Reach: 310K/bln</span>
+                <span class="text-emerald-400">Verified Member</span>
+              </div>
             </div>
 
-            <!-- Stat 4 -->
-            <div class="glass-panel p-6 sm:p-8 rounded-2xl relative overflow-hidden group">
-              <div class="absolute -right-4 -bottom-4 w-24 h-24 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition"></div>
-              <p class="text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400 mb-2">
-                14+
-              </p>
-              <h3 class="text-sm sm:text-base font-bold text-white mb-1">Platform Distribusi</h3>
-              <p class="text-xs sm:text-sm text-slate-400">Social media, video hub & forum publik</p>
+            <!-- Creator 4 -->
+            <div class="editorial-card rounded-xl p-5 text-left flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img src="/creators/avatar-kevin.jpg" alt="Kevin Tanuwidjaja" class="w-14 h-14 rounded-full object-cover border border-white/15" />
+                  <div>
+                    <h3 class="font-bold text-white text-base">Kevin Tanuwidjaja</h3>
+                    <p class="text-xs text-zinc-400">@kevintanu • X Threads & Forum</p>
+                    <span class="inline-block mt-1 text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-800 text-zinc-300">Business & E-Commerce</span>
+                  </div>
+                </div>
+                <p class="text-xs text-zinc-300 leading-relaxed mb-4">
+                  "Menjangkau pembaca di Reddit dan forum butuh pendekatan otentik tanpa gaya marketing kaku. Di komunitas ini kami belajar membangun otoritas organik."
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-400">
+                <span>Reach: 520K/bln</span>
+                <span class="text-emerald-400">Verified Member</span>
+              </div>
+            </div>
+
+            <!-- Creator 5 -->
+            <div class="editorial-card rounded-xl p-5 text-left flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img src="/creators/avatar-budi.jpg" alt="Budi Santoso" class="w-14 h-14 rounded-full object-cover border border-white/15" />
+                  <div>
+                    <h3 class="font-bold text-white text-base">Budi Santoso</h3>
+                    <p class="text-xs text-zinc-400">@budifinansial • YouTube & TikTok</p>
+                    <span class="inline-block mt-1 text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-800 text-zinc-300">Finance & Real Estate</span>
+                  </div>
+                </div>
+                <p class="text-xs text-zinc-300 leading-relaxed mb-4">
+                  "Edukasi finansial menuntut data yang valid dan visual yang mudah dipahami. Kolaborasi sesama kreator membuat distribusi materi kami jauh lebih luas."
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-400">
+                <span>Reach: 750K/bln</span>
+                <span class="text-emerald-400">Verified Member</span>
+              </div>
+            </div>
+
+            <!-- Creator 6 -->
+            <div class="editorial-card rounded-xl p-5 text-left flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-4 mb-4">
+                  <img src="/creators/avatar-amanda.jpg" alt="Amanda Putri" class="w-14 h-14 rounded-full object-cover border border-white/15" />
+                  <div>
+                    <h3 class="font-bold text-white text-base">Amanda Putri</h3>
+                    <p class="text-xs text-zinc-400">@amandaputri • Instagram & TikTok</p>
+                    <span class="inline-block mt-1 text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-800 text-zinc-300">Fashion & OOTD</span>
+                  </div>
+                </div>
+                <p class="text-xs text-zinc-300 leading-relaxed mb-4">
+                  "Menghubungkan audiens fashion dengan brand lokal membutuhkan standar visual tinggi. Jaringan ini memberi kami inspirasi dan partner kolaborasi nyata."
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-400">
+                <span>Reach: 390K/bln</span>
+                <span class="text-emerald-400">Verified Member</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CANDID IN-ACTION PHOTO GRID -->
+      <section class="py-20 bg-[#0e1014] border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-left mb-10">
+            <span class="text-xs font-mono text-zinc-400 uppercase tracking-widest">[ AKTIVITAS MEMBER ]</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2">
+              Proses Produksi Tanpa Basa-Basi
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="relative aspect-square rounded-xl overflow-hidden bg-zinc-900 border border-white/10 group">
+              <img src="/creators/action-aditya.jpg" alt="Aditya Editing Konten" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <p class="absolute bottom-3 left-3 text-xs font-medium text-white">Shooting & Hardware Testing</p>
+            </div>
+
+            <div class="relative aspect-square rounded-xl overflow-hidden bg-zinc-900 border border-white/10 group">
+              <img src="/creators/action-clara.jpg" alt="Clara Riset Konten" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <p class="absolute bottom-3 left-3 text-xs font-medium text-white">Riset Angle & Kalender Konten</p>
+            </div>
+
+            <div class="relative aspect-square rounded-xl overflow-hidden bg-zinc-900 border border-white/10 group">
+              <img src="/creators/action-kevin.jpg" alt="Kevin Diskusi Komunitas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <p class="absolute bottom-3 left-3 text-xs font-medium text-white">Review Tren Algoritma Mingguan</p>
+            </div>
+
+            <div class="relative aspect-square rounded-xl overflow-hidden bg-zinc-900 border border-white/10 group">
+              <img src="/creators/action-budi.jpg" alt="Budi Analisa Data" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <p class="absolute bottom-3 left-3 text-xs font-medium text-white">Optimasi SEO & Skrip Edukasi</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- BENEFITS SECTION -->
-      <section id="benefits" class="py-24 md:py-32 relative">
+      <section id="benefits" class="py-24 border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="text-xs uppercase font-bold tracking-widest text-indigo-400 bg-indigo-500/10 px-3.5 py-1.5 rounded-full border border-indigo-500/20">
-              Kenapa Harus Bergabung?
-            </span>
-            <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-4 mb-5">
-              Benefit Khusus Member Komunitas
+          <div class="text-left max-w-2xl mb-16">
+            <span class="text-xs font-mono text-zinc-400 uppercase tracking-widest">[ VALUE & BENEFIT ]</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">
+              Apa yang Kamu Dapatkan Saat Bergabung?
             </h2>
-            <p class="text-base sm:text-lg text-slate-300">
-              Jangan berjuang sendirian melawan algoritma. Di KreatorNetwork, kamu mendapatkan support system, alat produksi modern, dan jejaring yang saling mendongkrak performa karya.
+            <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+              Membuat konten sendirian itu melelahkan. Di KreatorNetwork, kita berbagi sistem, riset, dan jangkauan agar setiap kreator bisa tumbuh secara berkelanjutan.
             </p>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <!-- Benefit 1: Exclusive Network & Group Diskusi -->
-            <div class="glass-panel p-8 sm:p-10 rounded-3xl relative overflow-hidden border border-slate-800 hover:border-indigo-500/40 transition group">
-              <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-6 group-hover:scale-110 transition">
-                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Benefit 1 -->
+            <div class="editorial-card rounded-2xl p-8 text-left">
+              <div class="w-12 h-12 rounded-xl bg-zinc-800 border border-white/15 flex items-center justify-center text-white mb-6 font-bold text-lg">
+                01
               </div>
               <h3 class="text-2xl font-bold text-white mb-3">
                 Akses Exclusive Network & Group Diskusi
               </h3>
-              <p class="text-slate-300 leading-relaxed mb-6">
-                Bergabung ke lingkaran tertutup (Private VIP Circle di Telegram & Discord) sesama kreator aktif. Diskusi update algoritma paling mutakhir, bedah studi kasus video viral, dan kolaborasi cross-promotion tanpa drama.
+              <p class="text-zinc-300 text-sm leading-relaxed mb-6">
+                Circle tertutup di Telegram & Discord bersama sesama kreator aktif. Diskusi update algoritma real-time, sharing tren audio, bedah performa postingan, dan kolaborasi cross-posting tanpa biaya.
               </p>
-              <ul class="space-y-3 text-sm text-slate-300 font-medium">
-                <li class="flex items-center gap-2.5">
-                  <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">✓</span>
-                  Grup diskusi tertutup bebas spam & sales jualan liar
+              <ul class="space-y-2.5 text-xs text-zinc-300 font-medium">
+                <li class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  Bebas spam & bebas penawaran sales liar
                 </li>
-                <li class="flex items-center gap-2.5">
-                  <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">✓</span>
-                  Update berkala perubahan algoritma TikTok & IG Reels
+                <li class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  Update algoritma TikTok & IG Reels setiap ada perubahan
                 </li>
-                <li class="flex items-center gap-2.5">
-                  <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">✓</span>
-                  Peluang kolaborasi konten antar member satu niche
+                <li class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  Peluang kolaborasi antar member dengan audiens yang relevan
                 </li>
               </ul>
             </div>
 
-            <!-- Benefit 2: Resource, Tools AI & Template Konten Siap Pakai -->
-            <div class="glass-panel p-8 sm:p-10 rounded-3xl relative overflow-hidden border border-slate-800 hover:border-purple-500/40 transition group">
-              <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition">
-                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                </svg>
+            <!-- Benefit 2 -->
+            <div class="editorial-card rounded-2xl p-8 text-left">
+              <div class="w-12 h-12 rounded-xl bg-zinc-800 border border-white/15 flex items-center justify-center text-white mb-6 font-bold text-lg">
+                02
               </div>
               <h3 class="text-2xl font-bold text-white mb-3">
-                Resource, Tools AI & Template Konten
+                Resource, Tools AI & Template Konten Siap Pakai
               </h3>
-              <p class="text-slate-300 leading-relaxed mb-6">
-                Akses brankas aset digital lengkap untuk mempercepat proses produksi harian: prompt engineering teruji untuk ChatGPT & Claude, template script video 3 detik pertama (hook), dan aset grafis siap pakai.
+              <p class="text-zinc-300 text-sm leading-relaxed mb-6">
+                Koleksi alat bantu praktis untuk mempercepat proses produksi harian: prompt AI teruji untuk riset topik viral, bank hook kalimat pembuka 3 detik pertama, dan kalender editorial konten multi-channel.
               </p>
-              <ul class="space-y-3 text-sm text-slate-300 font-medium">
-                <li class="flex items-center gap-2.5">
-                  <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">✓</span>
-                  Prompt AI Khusus riset topik viral & copywriting caption
+              <ul class="space-y-2.5 text-xs text-zinc-300 font-medium">
+                <li class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  Bank prompt AI untuk riset topik, hook, dan caption
                 </li>
-                <li class="flex items-center gap-2.5">
-                  <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">✓</span>
-                  Template hook & retention formula untuk video pendek
+                <li class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  Template struktur script video retention tinggi
                 </li>
-                <li class="flex items-center gap-2.5">
-                  <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">✓</span>
-                  Checklist kalender editorial konten multi-channel
+                <li class="flex items-center gap-2">
+                  <span class="text-emerald-400 font-bold">✓</span>
+                  Checklist kalender editorial mingguan & bulanan
                 </li>
               </ul>
             </div>
@@ -258,120 +434,43 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </section>
 
-      <!-- PLATFORMS ECOSYSTEM SECTION -->
-      <section id="platforms" class="py-20 bg-slate-950/40 border-t border-slate-800/80">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">
-            Dominasi Berbagai Format Media
-          </h2>
-          <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto mb-12">
-            Kreator di jaringan kami tidak terpaku pada satu kanal saja. Kami percaya pada strategi multi-platform untuk meminimalisir risiko ketergantungan algoritma.
-          </p>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
-            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center font-bold">IG</div>
-                <h3 class="font-bold text-white">Instagram Creators</h3>
-              </div>
-              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Fokus pada visual storytelling, carousel edukatif berbobot tinggi, dan Reels dengan audio tren terkurasi.
-              </p>
-            </div>
-
-            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold">TK</div>
-                <h3 class="font-bold text-white">TikTok Maestros</h3>
-              </div>
-              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Spesialis hook instan 3 detik pertama, format video candid relatable, dan penguasaan tren FYP organik.
-              </p>
-            </div>
-
-            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center font-bold">YT</div>
-                <h3 class="font-bold text-white">YouTube Producers</h3>
-              </div>
-              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Membangun otoritas jangka panjang lewat Shorts viral dan konten long-form bernilai edukasi tinggi.
-              </p>
-            </div>
-
-            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center font-bold">X</div>
-                <h3 class="font-bold text-white">X / Twitter Curators</h3>
-              </div>
-              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Ahli merangkai thread pemikiran kritis, kurasi data, serta topik diskusi yang memicu percakapan luas.
-              </p>
-            </div>
-
-            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold">FM</div>
-                <h3 class="font-bold text-white">Forum & Community</h3>
-              </div>
-              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Eksis di Kaskus, Reddit, Quora, dan forum industri spesifik (properti, otomotif, tech) untuk membangun reputasi organik.
-              </p>
-            </div>
-
-            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold">AI</div>
-                <h3 class="font-bold text-white">AI-Augmented Creators</h3>
-              </div>
-              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Kreator era baru yang melipatgandakan output konten berkualitas memanfaatkan AI tools dan automasi cerdas.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- REGISTRATION SECTION -->
-      <section id="register" class="py-24 md:py-32 relative">
+      <!-- REGISTRATION SECTION (MASUK KE EMAIL) -->
+      <section id="register" class="py-24 bg-[#0e1014]">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-12">
-            <span class="text-xs uppercase font-bold tracking-widest text-emerald-400 bg-emerald-500/10 px-3.5 py-1.5 rounded-full border border-emerald-500/20">
-              Form Pendaftaran Member
-            </span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 mb-3">
-              Bergabung Dengan KreatorNetwork
+            <span class="text-xs font-mono text-zinc-400 uppercase tracking-widest">[ FORM PENDAFTARAN ]</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-3">
+              Bergabung ke Komunitas Kreator
             </h2>
-            <p class="text-slate-300 text-sm sm:text-base">
-              Isi data diri dan akun kontenmu di bawah ini. Konfirmasi dan tautan akses komunitas eksklusif akan langsung kami kirimkan ke emailmu.
+            <p class="text-zinc-400 text-sm max-w-lg mx-auto">
+              Pendaftaran saat ini terbuka dan 100% gratis. Isi data di bawah ini, konfirmasi dan link akses komunitas akan langsung kami kirimkan ke emailmu.
             </p>
           </div>
 
-          <!-- Registration Card -->
-          <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-indigo-500/20 relative shadow-2xl shadow-indigo-950/50">
-            <!-- Alert Container -->
-            <div id="form-alert" class="hidden mb-6 p-4 rounded-2xl text-sm font-medium"></div>
+          <!-- Registration Form Container -->
+          <div class="editorial-card rounded-2xl p-8 sm:p-10 border border-white/15 text-left">
+            <div id="form-alert" class="hidden mb-6 p-4 rounded-xl text-xs font-medium"></div>
 
-            <form id="creator-register-form" class="space-y-6">
-              <!-- Field: Nama Lengkap -->
+            <form id="creator-register-form" class="space-y-5">
+              <!-- Nama -->
               <div>
-                <label for="fullName" class="block text-sm font-semibold text-slate-200 mb-2">
-                  Nama Lengkap / Alias Kreator <span class="text-indigo-400">*</span>
+                <label for="fullName" class="block text-xs uppercase tracking-wider font-bold text-zinc-300 mb-2">
+                  Nama Lengkap / Alias Kreator <span class="text-rose-400">*</span>
                 </label>
                 <input
                   type="text"
                   id="fullName"
                   name="fullName"
                   required
-                  placeholder="Contoh: Ryan Pratama / @ryancreate"
-                  class="w-full px-4 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition"
+                  placeholder="Misal: Ryan Pratama / @ryancrafts"
+                  class="w-full px-4 py-3 rounded-lg bg-zinc-900 border border-white/15 text-white placeholder-zinc-500 text-sm focus:outline-none focus:border-white transition"
                 />
               </div>
 
-              <!-- Field: Email -->
+              <!-- Email -->
               <div>
-                <label for="email" class="block text-sm font-semibold text-slate-200 mb-2">
-                  Alamat Email Aktif <span class="text-indigo-400">*</span>
+                <label for="email" class="block text-xs uppercase tracking-wider font-bold text-zinc-300 mb-2">
+                  Alamat Email Aktif <span class="text-rose-400">*</span>
                 </label>
                 <input
                   type="email"
@@ -379,14 +478,14 @@ import Layout from '../layouts/Layout.astro';
                   name="email"
                   required
                   placeholder="nama@email.com (Untuk pengiriman link akses komunitas)"
-                  class="w-full px-4 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition"
+                  class="w-full px-4 py-3 rounded-lg bg-zinc-900 border border-white/15 text-white placeholder-zinc-500 text-sm focus:outline-none focus:border-white transition"
                 />
               </div>
 
-              <!-- Field: WhatsApp -->
+              <!-- WhatsApp -->
               <div>
-                <label for="whatsapp" class="block text-sm font-semibold text-slate-200 mb-2">
-                  Nomor WhatsApp Aktif <span class="text-indigo-400">*</span>
+                <label for="whatsapp" class="block text-xs uppercase tracking-wider font-bold text-zinc-300 mb-2">
+                  Nomor WhatsApp Aktif <span class="text-rose-400">*</span>
                 </label>
                 <input
                   type="tel"
@@ -394,34 +493,34 @@ import Layout from '../layouts/Layout.astro';
                   name="whatsapp"
                   required
                   placeholder="Contoh: 081234567890"
-                  class="w-full px-4 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition"
+                  class="w-full px-4 py-3 rounded-lg bg-zinc-900 border border-white/15 text-white placeholder-zinc-500 text-sm focus:outline-none focus:border-white transition"
                 />
               </div>
 
-              <!-- Field: Platform Utama & Handle -->
+              <!-- Platform & Handle -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label for="platform" class="block text-sm font-semibold text-slate-200 mb-2">
-                    Platform Utama <span class="text-indigo-400">*</span>
+                  <label for="platform" class="block text-xs uppercase tracking-wider font-bold text-zinc-300 mb-2">
+                    Platform Utama <span class="text-rose-400">*</span>
                   </label>
                   <select
                     id="platform"
                     name="platform"
                     required
-                    class="w-full px-4 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white text-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition"
+                    class="w-full px-4 py-3 rounded-lg bg-zinc-900 border border-white/15 text-white text-sm focus:outline-none focus:border-white transition"
                   >
-                    <option value="Instagram">Instagram</option>
+                    <option value="Instagram">Instagram (Reels / Feed)</option>
                     <option value="TikTok">TikTok</option>
-                    <option value="YouTube">YouTube</option>
+                    <option value="YouTube">YouTube (Shorts / Longform)</option>
                     <option value="X/Twitter">X / Twitter</option>
-                    <option value="Forum/Komunitas">Forum (Kaskus, Reddit, Quora)</option>
+                    <option value="Forum">Forum (Kaskus, Reddit, Quora)</option>
                     <option value="Lainnya">Lainnya</option>
                   </select>
                 </div>
 
                 <div>
-                  <label for="handle" class="block text-sm font-semibold text-slate-200 mb-2">
-                    Username / Link Akun <span class="text-indigo-400">*</span>
+                  <label for="handle" class="block text-xs uppercase tracking-wider font-bold text-zinc-300 mb-2">
+                    Username / Link Profil <span class="text-rose-400">*</span>
                   </label>
                   <input
                     type="text"
@@ -429,86 +528,86 @@ import Layout from '../layouts/Layout.astro';
                     name="handle"
                     required
                     placeholder="@akunmu atau url profil"
-                    class="w-full px-4 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition"
+                    class="w-full px-4 py-3 rounded-lg bg-zinc-900 border border-white/15 text-white placeholder-zinc-500 text-sm focus:outline-none focus:border-white transition"
                   />
                 </div>
               </div>
 
-              <!-- Field: Niche Konten -->
+              <!-- Niche -->
               <div>
-                <label for="niche" class="block text-sm font-semibold text-slate-200 mb-2">
-                  Kategori / Niche Konten Utama <span class="text-indigo-400">*</span>
+                <label for="niche" class="block text-xs uppercase tracking-wider font-bold text-zinc-300 mb-2">
+                  Kategori / Niche Konten <span class="text-rose-400">*</span>
                 </label>
                 <select
                   id="niche"
                   name="niche"
                   required
-                  class="w-full px-4 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white text-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition"
+                  class="w-full px-4 py-3 rounded-lg bg-zinc-900 border border-white/15 text-white text-sm focus:outline-none focus:border-white transition"
                 >
                   <option value="Tech & Gadget">Tech, Gadget & Software</option>
                   <option value="Bisnis & Keuangan">Bisnis, Finansial & Investasi</option>
-                  <option value="Properti & Real Estate">Properti, Interior & Real Estate</option>
-                  <option value="Lifestyle & Fashion">Lifestyle, Fashion & Daily Vlog</option>
-                  <option value="Kuliner & F&B">Kuliner, Resep & Review Makanan</option>
-                  <option value="Edukasi & Self-Improvement">Edukasi & Pengembangan Diri</option>
-                  <option value="Gaming & Entertainment">Gaming, Komedi & Hiburan</option>
-                  <option value="Otomotif">Otomotif & Modifikasi</option>
-                  <option value="Niche Lainnya">Lainnya</option>
+                  <option value="Lifestyle & Travel">Lifestyle, Travel & Vlog</option>
+                  <option value="Kuliner & F&B">Kuliner & Review Makanan</option>
+                  <option value="Fashion & Beauty">Fashion, Beauty & OOTD</option>
+                  <option value="Edukasi & Self-Growth">Edukasi & Pengembangan Diri</option>
+                  <option value="Gaming & Komedi">Gaming & Hiburan</option>
+                  <option value="Otomotif & Properti">Otomotif & Properti</option>
+                  <option value="Lainnya">Lainnya</option>
                 </select>
               </div>
 
-              <!-- Submit Button -->
+              <!-- Submit -->
               <div class="pt-4">
                 <button
                   type="submit"
                   id="submit-btn"
-                  class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-base shadow-xl shadow-indigo-600/30 hover:shadow-indigo-600/50 hover:scale-[1.01] active:scale-[0.99] transition flex items-center justify-center gap-2 border border-indigo-400/30 cursor-pointer"
+                  class="w-full py-4 px-6 rounded-lg bg-white hover:bg-zinc-200 text-black font-bold text-sm tracking-wide transition flex items-center justify-center gap-2 cursor-pointer active:scale-[0.99]"
                 >
                   <span id="btn-text">Kirim Pendaftaran & Dapatkan Akses</span>
-                  <svg id="btn-spinner" class="hidden animate-spin w-5 h-5 text-white" fill="none" viewBox="0 0 24 24">
+                  <svg id="btn-spinner" class="hidden animate-spin w-4 h-4 text-black" fill="none" viewBox="0 0 24 24">
                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
                   </svg>
                 </button>
-                <p class="text-[11px] text-center text-slate-500 mt-3">
-                  🔒 Data akun dan kontak aman. Kami hanya menggunakannya untuk proses onboarding komunitas resmi KreatorNetwork.
+                <p class="text-[11px] text-zinc-400 text-center mt-3">
+                  Data aman. Informasi pendaftaran langsung diteruskan ke email admin untuk proses verifikasi.
                 </p>
               </div>
             </form>
 
-            <!-- Success State View (Revealed after submission) -->
+            <!-- Success State View -->
             <div id="success-view" class="hidden text-center py-6">
-              <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center mx-auto mb-5 text-2xl font-bold">
+              <div class="w-14 h-14 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                 ✓
               </div>
-              <h3 class="text-2xl font-extrabold text-white mb-2">Pendaftaran Berhasil Dikirim!</h3>
-              <p class="text-slate-300 text-sm max-w-md mx-auto mb-6 leading-relaxed">
-                Terima kasih telah mendaftar. Data pendaftaranmu telah tercatat dan konfirmasi sedang dikirimkan ke email <span id="confirmed-email" class="text-indigo-400 font-semibold"></span>.
+              <h3 class="text-2xl font-bold text-white mb-2">Pendaftaran Berhasil Dikirim</h3>
+              <p class="text-zinc-300 text-sm max-w-md mx-auto mb-6">
+                Data pendaftaran telah dicatat. Kami telah meneruskan konfirmasi ke email <span id="confirmed-email" class="text-white font-semibold underline"></span>.
               </p>
-              <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 text-left text-xs space-y-2 mb-6 max-w-md mx-auto text-slate-300">
+              <div class="p-4 rounded-xl bg-zinc-900 border border-white/10 text-left text-xs space-y-2 mb-6 max-w-md mx-auto text-zinc-300 font-mono">
                 <div class="flex justify-between">
-                  <span class="text-slate-500">Nama:</span>
-                  <span id="summary-name" class="font-semibold text-white"></span>
+                  <span class="text-zinc-400">Nama:</span>
+                  <span id="summary-name" class="text-white font-semibold"></span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="text-slate-500">Platform:</span>
-                  <span id="summary-platform" class="font-semibold text-white"></span>
+                  <span class="text-zinc-400">Platform:</span>
+                  <span id="summary-platform" class="text-white"></span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="text-slate-500">Handle:</span>
-                  <span id="summary-handle" class="font-semibold text-white"></span>
+                  <span class="text-zinc-400">Handle:</span>
+                  <span id="summary-handle" class="text-white"></span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="text-slate-500">Status:</span>
-                  <span class="font-semibold text-emerald-400">Tercatat / Menunggu Verifikasi Email</span>
+                  <span class="text-zinc-400">Status:</span>
+                  <span class="text-emerald-400 font-semibold">Tercatat di Sistem</span>
                 </div>
               </div>
               <button
                 type="button"
                 id="reset-form-btn"
-                class="inline-flex items-center justify-center px-6 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition"
+                class="px-5 py-2.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-xs font-semibold text-zinc-200 transition"
               >
-                Daftarkan Akun / Creator Lain
+                Daftarkan Kreator Lain
               </button>
             </div>
           </div>
@@ -516,43 +615,34 @@ import Layout from '../layouts/Layout.astro';
       </section>
 
       <!-- FAQ SECTION -->
-      <section id="faq" class="py-20 bg-slate-950/50 border-t border-slate-800/80">
+      <section id="faq" class="py-20 border-t border-white/10">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-14">
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">
+          <div class="text-left mb-12">
+            <span class="text-xs font-mono text-zinc-400 uppercase tracking-widest">[ FAQ ]</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-2">
               Pertanyaan yang Sering Diajukan
             </h2>
-            <p class="text-slate-400 text-sm">
-              Semua yang perlu kamu ketahui tentang keanggotaan KreatorNetwork.
-            </p>
           </div>
 
           <div class="space-y-4">
-            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-              <h3 class="font-bold text-white text-base mb-2">Apakah ada biaya untuk bergabung?</h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Tidak ada. Keanggotaan komunitas KreatorNetwork saat ini 100% gratis bagi kreator yang konsisten dan aktif memproduksi konten di kanal masing-masing.
+            <div class="editorial-card p-6 rounded-xl text-left">
+              <h3 class="font-bold text-white text-sm mb-2">Apakah ada biaya untuk bergabung?</h3>
+              <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                Tidak ada biaya pendaftaran. Keanggotaan komunitas KreatorNetwork saat ini 100% gratis bagi kreator yang konsisten dan aktif memproduksi konten di kanal masing-masing.
               </p>
             </div>
 
-            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-              <h3 class="font-bold text-white text-base mb-2">Berapa minimal jumlah followers untuk bisa mendaftar?</h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Tidak ada batas minimal followers. Yang kami utamakan adalah orisinalitas karya, komitmen berkarya secara reguler, dan semangat berkolaborasi positif bersama sesama kreator.
+            <div class="editorial-card p-6 rounded-xl text-left">
+              <h3 class="font-bold text-white text-sm mb-2">Berapa minimal jumlah followers untuk bisa mendaftar?</h3>
+              <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                Tidak ada syarat minimal followers. Kami mengutamakan konsistensi berkarya, keaslian konten, dan kemauan untuk saling berinteraksi positif dengan sesama member.
               </p>
             </div>
 
-            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-              <h3 class="font-bold text-white text-base mb-2">Bagaimana cara menerima link akses komunitas setelah mendaftar?</h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Setelah form pendaftaran dikirimkan, sistem akan memvalidasi data dan mengirimkan instruksi onboarding serta tautan private group langsung ke email dan WhatsApp yang kamu daftarkan.
-              </p>
-            </div>
-
-            <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-              <h3 class="font-bold text-white text-base mb-2">Apakah kreator non-video (penulis thread / forum) boleh ikut?</h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Tentu saja. KreatorNetwork terbuka bagi content writer, kurator thread X/Twitter, serta kontributor forum aktif (Kaskus, Quora, Reddit).
+            <div class="editorial-card p-6 rounded-xl text-left">
+              <h3 class="font-bold text-white text-sm mb-2">Bagaimana data pendaftaran diproses?</h3>
+              <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                Data yang kamu kirimkan masuk ke email sistem kurasi kami. Setelah ditinjau secara berkala, instruksi dan link akses ke inner circle akan dikirimkan ke email dan kontak WhatsApp kamu.
               </p>
             </div>
           </div>
@@ -561,17 +651,17 @@ import Layout from '../layouts/Layout.astro';
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t border-slate-800/80 bg-[#090d16] py-12">
+    <footer class="border-t border-white/10 bg-[#090a0c] py-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="flex items-center gap-3">
-          <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm">
+          <div class="w-7 h-7 rounded bg-zinc-800 border border-white/15 flex items-center justify-center text-white font-bold text-xs">
             KN
           </div>
-          <span class="font-bold text-white tracking-tight">KreatorNetwork.com</span>
+          <span class="font-bold text-white text-sm tracking-tight">KreatorNetwork.com</span>
         </div>
 
-        <p class="text-xs text-slate-400 text-center md:text-right">
-          © 2026 KreatorNetwork.com — All rights reserved. Hub Komunitas & Ekosistem Content Creator Indonesia.
+        <p class="text-xs text-zinc-400 text-center md:text-right">
+          © 2026 KreatorNetwork.com — All rights reserved. Ekosistem Komunitas Content Creator Indonesia.
         </p>
       </div>
     </footer>
@@ -610,45 +700,27 @@ import Layout from '../layouts/Layout.astro';
 
         // UI Loading State
         submitBtn.disabled = true;
-        btnText.textContent = 'Memproses Pendaftaran...';
+        btnText.textContent = 'Memproses...';
         btnSpinner.classList.remove('hidden');
         alertBox.classList.add('hidden');
 
         try {
-          // Send to Email via Web3Forms API (no backend key required for direct recipient, or local store)
-          // Fallback saves locally and guarantees user experience
-          const payload = {
-            subject: `Pendaftaran Kreator Baru: ${data.fullName} (${data.platform})`,
-            from_name: 'KreatorNetwork Bot',
-            to_email: 'admin@kreatornetwork.com',
-            message: `
-Pendaftaran Baru di KreatorNetwork.com:
-- Nama: ${data.fullName}
-- Email: ${data.email}
-- WhatsApp: ${data.whatsapp}
-- Platform: ${data.platform} (${data.handle})
-- Niche: ${data.niche}
-- Waktu: ${data.timestamp}
-            `,
-            ...data
-          };
-
-          // Try POST to local API / webhook if configured, else store in localStorage
+          // Send to Cloudflare Function / API
           try {
             await fetch('/api/register', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(payload)
+              body: JSON.stringify(data)
             }).catch(() => null);
           } catch (_) {}
 
-          // Also save to client storage so no submission is ever lost
+          // Fallback persistent client-storage
           const existing = JSON.parse(localStorage.getItem('kn_registrations') || '[]');
           existing.push(data);
           localStorage.setItem('kn_registrations', JSON.stringify(existing));
 
-          // Simulate slight delay for authentic feel
-          await new Promise(resolve => setTimeout(resolve, 800));
+          // Natural transition delay
+          await new Promise(resolve => setTimeout(resolve, 600));
 
           // Switch to Success View
           form.classList.add('hidden');
@@ -660,8 +732,8 @@ Pendaftaran Baru di KreatorNetwork.com:
           if (summaryHandle) summaryHandle.textContent = data.handle;
 
         } catch (err) {
-          alertBox.className = 'mb-6 p-4 rounded-2xl text-sm font-medium bg-rose-500/10 border border-rose-500/30 text-rose-300';
-          alertBox.textContent = 'Terjadi kendala teknis saat memproses data. Silakan coba kembali.';
+          alertBox.className = 'mb-6 p-4 rounded-xl text-xs font-medium bg-rose-500/10 border border-rose-500/30 text-rose-300';
+          alertBox.textContent = 'Terjadi kendala saat mengirim data. Silakan coba kembali.';
           alertBox.classList.remove('hidden');
         } finally {
           submitBtn.disabled = false;
