@@ -1,1 +1,5 @@
-node_modules/\ndist/\n.astro/\n.wrangler/\n
+node_modules/
+dist/
+.astro/
+.wrangler/
+.pnpm-store/
